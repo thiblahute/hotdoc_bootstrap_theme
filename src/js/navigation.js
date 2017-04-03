@@ -4,7 +4,7 @@ hd_navigation.panel_template = [
 	'<div class="sidenav-panel-body {{panel_class}}">',
 	'{{{panel_span_start}}}',
 	'<div class="panel-heading">',
-	'<h4 class="panel-title" data-toc-skip>',
+	'<h4 class="panel-title always-hide-toc" data-toc-skip>',
 	'<a class="sidenav-ref" href="{{{url}}}"',
 	' data-extension="{{extension}}">',
 	'{{title}}</a>',
