@@ -240,7 +240,7 @@ function setupFilters() {
 		},
 	});
 
-	Toc.init($myNav);
+	Toc.init($myNav, { headings: 'h1,h2,h3,h4' });
 
 	function layoutTimer(){
 
@@ -255,7 +255,7 @@ function setupFilters() {
 		$("h1,h2,h3,h4,h5,h6").removeAttr("data-toc-skip");
 		$("h1:hidden,h2:hidden,h3:hidden,h4:hidden,h5:hidden,h6:hidden").attr("data-toc-skip", "true");
 		$myNav.empty();
-		Toc.init($myNav);
+		Toc.init($myNav, { headings: 'h1,h2,h3,h4' });
 	})
 
 	// Isotope messes with our anchors positions
